@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./css/contac.css">
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!-- Header / Top Banner -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-group">
+        <img src="images/2.webp" alt="Logo" class="logo-img">
+        <img src="images/3.webp" alt="Logo Text" class="logo-text-img">
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="page.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <ul>
+          <li><a href="page.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="cce7e8fa-c77e-4cfd-9fc4-aa801dbca39e">
+
+      <input type="text" name="name" required placeholder="Name">
+      <input type="email" name="email" required placeholder="Email">
+      <textarea name="message" required placeholder="Your Message"></textarea>
+      <button type="submit">Submit Form</button>
+
+    </form>
+
+    <p>
+      <!-- WhatsApp Link with Icon -->
+    <div class="whatsapp-container">
+      <a href="https://wa.me/+9710506817376" target="_blank" class="whatsapp-link-rect" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="16" fill="#25D366" />
+          <path
+            d="M23.472 19.339c-.355-.177-2.104-1.037-2.43-1.155-.326-.119-.563-.177-.8.177-.237.355-.914 1.155-1.12 1.392-.207.237-.414.266-.769.089-.355-.178-1.5-.553-2.86-1.763-1.057-.944-1.771-2.108-1.98-2.463-.207-.355-.022-.546.155-.723.159-.158.355-.414.533-.622.178-.207.237-.355.355-.592.119-.237.06-.444-.03-.622-.089-.178-.8-1.924-1.096-2.637-.289-.693-.583-.599-.8-.61-.207-.009-.444-.011-.681-.011-.237 0-.622.089-.949.444-.326.355-1.24 1.211-1.24 2.955 0 1.744 1.269 3.429 1.447 3.666.178.237 2.5 3.82 6.063 5.209.849.292 1.51.466 2.027.596.851.203 1.626.174 2.238.106.682-.075 2.104-.859 2.402-1.689.296-.83.296-1.541.207-1.689-.089-.148-.326-.237-.681-.414z"
+            fill="#fff" />
+        </svg>
+        <span>Contact us on WhatsApp</span>
+      </a>
+    </div>
+    </p>
+
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const header = document.querySelector('.site-header');
+
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('active');
+      mobileMenuBtn.classList.toggle('active');
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Close mobile menu when clicking on links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
