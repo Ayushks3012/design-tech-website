@@ -2,7 +2,7 @@
 
 This is the official website for **Design Tech**, a company specializing in creative design, fabrication, and engraving solutions.
 
-🛠️ Developed with precision and professionalism by [Ayush K S](https://www.linkedin.com/in/ayush-ks-dev).
+🛠️ Developed with precision and professionalism by [Ayush K S](https://www.linkedin.com/in/ayush-k-s-web).
 
 ---
 
@@ -50,6 +50,6 @@ This is the official website for **Design Tech**, a company specializing in crea
 For freelance projects, collaborations, or queries:
 
 **Ayush K S**
-🌐 [LinkedIn](https://www.linkedin.com/in/ayush-ks-dev)  
+🌐 [LinkedIn](https://www.linkedin.com/in/ayush-k-s-web)
 📧 ks.ayushks@gmail.com
 📱 +91 89431 40840
